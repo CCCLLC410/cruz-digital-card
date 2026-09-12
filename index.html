@@ -12,94 +12,131 @@
 
     body {
       margin: 0;
+      padding: 25px 15px;
+      background: #e8ebef;
       font-family: Arial, Helvetica, sans-serif;
-      background: #e9edf2;
-      color: #1d2733;
+      color: #222;
     }
 
     .card {
       max-width: 430px;
-      margin: 30px auto;
-      background: white;
-      border-radius: 24px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 18px;
       overflow: hidden;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
     }
 
-    .header {
-      background: linear-gradient(135deg, #062b63, #0755a5);
-      color: white;
-      padding: 30px 25px 25px;
+    .hero {
+      background: linear-gradient(135deg, #063d78, #0b5ba8);
+      padding: 28px 24px 24px;
       text-align: center;
+      color: #ffffff;
     }
 
     .logo-image {
-  width: 150px;
-  max-width: 80%;
-  height: auto;
-  display: block;
-  margin: 0 auto 12px;
-}
+      display: block;
+      width: 170px;
+      max-width: 80%;
+      height: auto;
+      margin: 0 auto 15px;
+    }
+
     .company {
-      font-size: 21px;
-      font-weight: bold;
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      margin-bottom: 7px;
     }
 
     .tagline {
-      margin-top: 8px;
-      font-size: 14px;
-      letter-spacing: 1px;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #e7edf5;
+    }
+
+    .photo-area {
+      width: 100%;
+      height: 205px;
+      overflow: hidden;
+      background: #cfd3d8;
+    }
+
+    .photo-area img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .content {
-      padding: 25px;
+      padding: 25px 24px 20px;
+      text-align: center;
     }
 
     .services {
-      font-size: 18px;
-      font-weight: bold;
       color: #073f82;
-      margin-bottom: 15px;
+      font-size: 17px;
+      font-weight: 800;
+      line-height: 1.5;
+      margin-bottom: 14px;
     }
 
     .description {
-      line-height: 1.6;
       color: #555;
-      margin-bottom: 25px;
+      font-size: 14px;
+      line-height: 1.6;
+      margin: 0 auto 22px;
+      max-width: 350px;
     }
 
     .button {
       display: block;
+      width: 100%;
+      padding: 14px 18px;
+      margin: 10px 0;
+      background: #073f82;
+      color: #ffffff;
       text-decoration: none;
-      text-align: center;
-      background: #0755a5;
-      color: white;
-      padding: 15px;
-      border-radius: 12px;
-      margin: 12px 0;
+      border-radius: 9px;
+      font-size: 15px;
       font-weight: bold;
-      font-size: 16px;
+      transition: background 0.2s ease;
     }
 
     .button:hover {
       background: #063d78;
     }
 
+    .button.secondary {
+      background: #eef1f5;
+      color: #073f82;
+      border: 1px solid #d5dbe2;
+    }
+
+    .button.secondary:hover {
+      background: #e1e6ec;
+    }
+
     .qr-section {
       background: #f1f3f6;
       text-align: center;
-      padding: 25px;
+      padding: 25px 20px;
+      border-top: 1px solid #e0e3e7;
     }
 
     .qr-title {
       font-weight: bold;
       color: #073f82;
       margin-bottom: 8px;
+      font-size: 15px;
     }
 
     .qr-text {
       font-size: 13px;
       color: #666;
+      line-height: 1.5;
     }
 
     .footer {
@@ -107,6 +144,7 @@
       padding: 18px;
       font-size: 12px;
       color: #777;
+      background: #ffffff;
     }
   </style>
 </head>
@@ -115,10 +153,40 @@
 
   <div class="card">
 
-    <div class="header">
-      <img src="cruz%20png%20logo.png" alt="Cruz Construction & Concrete Logo" class="logo-image">
-      <div class="company">Construction & Concrete</div>
-      <div class="tagline">COMMERCIAL & RESIDENTIAL</div>
+    <div class="hero">
+
+      <img
+        src="cruz%20png%20logo.png"
+        alt="Cruz Construction & Concrete Logo"
+        class="logo-image"
+      >
+
+      <div class="company">
+        Construction & Concrete
+      </div>
+
+      <div class="tagline">
+        COMMERCIAL & RESIDENTIAL
+      </div>
+
+    </div>
+
+    <!--
+      YOUR APPROVED CONCRETE DRIVEWAY/PREP PHOTO
+      will go here.
+
+      Temporary filename:
+      concrete-driveway.jpg
+
+      We will upload your actual photo to GitHub
+      and make sure this filename matches it.
+    -->
+
+    <div class="photo-area">
+      <img
+        src="driveway.JPG"
+        alt="Cruz Construction & Concrete concrete work"
+      >
     </div>
 
     <div class="content">
@@ -128,25 +196,30 @@
       </div>
 
       <div class="description">
-        Professional construction and concrete services for
-        commercial and residential projects.
+        Professional construction and concrete services
+        for commercial and residential projects.
       </div>
 
       <a class="button" href="tel:+14108585281">
         📞 Call Cruz Construction
       </a>
 
-      <a class="button" href="mailto:Jaime@Cruzconcrete1.com">
-        ✉️ Email Us
+      <a class="button secondary" href="mailto:Jaime@Cruzconcrete1.com">
+        ✉️ Email Cruz Construction
       </a>
 
     </div>
 
     <div class="qr-section">
-      <div class="qr-title">CRUZ CONSTRUCTION & CONCRETE</div>
+
+      <div class="qr-title">
+        CRUZ CONSTRUCTION & CONCRETE
+      </div>
+
       <div class="qr-text">
         Scan to save our contact information
       </div>
+
     </div>
 
     <div class="footer">
